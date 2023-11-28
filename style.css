@@ -1,0 +1,167 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.formContainer small {
+    visibility: hidden;
+    font-size: 16px;
+    margin: 5px 0;
+    position: relative;
+    color: red;
+}
+.error small{
+    visibility: visible;
+}
+
+body {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.formContainer {
+    display: flex;
+    margin-top: 90px;
+    align-items: center;
+    justify-content: center;
+
+}
+
+form {
+    /* border: 1px solid black; */
+    padding: 50px;
+    background-color: rgba(0, 253, 253, 0.623);
+    border-radius: 10px;
+}
+
+
+.form-control label {
+    font-size: 24px;
+    padding: 10px 0;
+    color: rgb(31, 11, 11);
+    font-weight: 800;
+}
+
+.form-control input {
+    height: 35px;
+    border-radius: 5px;
+    border: none;
+    font-size: large;
+  
+}
+
+input:focus {
+    border-color: blueviolet;
+}
+
+.btn {
+    padding: 8px 16px;
+    border-radius: 5px;
+    font-size: 16px;
+    text-align: center;
+    margin-top: 20px;
+    background-color: rgb(119, 110, 115);
+    border: none;
+    cursor: pointer;
+    color: white;
+}
+
+.btn-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.form-control {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-control input {
+    height: 50px;
+    width: 290px;
+    appearance: none;
+    box-shadow: -10px -10px 15px rgba(255, 255, 255, 0.5), 10px 10px 15px rgba(70, 70, 70, 0.12);
+    border-radius: 10px;
+    border: 8px solid #ececec;
+    background-color: #ececec;
+    cursor: pointer;
+    outline: none;
+    padding: 0px 15px;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s
+}
+
+.form-control input:after {
+    font-family: FontAwesome;
+    content: '\f011';
+    position: absolute;
+    color: #7a7a7a;
+    font-size: 30px;
+    /* color: red */
+}
+
+.form-control input:focus {
+    box-shadow: -10px -10px 15px rgba(255, 255, 255, 0.5), 10px 10px 15px rgba(70, 70, 70, 0.12), inset -10px -10px 15px rgba(255, 255, 255, 0.5), inset 10px 10px 15px rgba(70, 70, 70, 0.12);
+    color: rgb(73, 172, 73)
+}
+
+
+
+.success input{
+    border-color: green;
+    margin-top: 10px;
+    height: 50px;
+    width: 290px;
+    appearance: none;
+    box-shadow: -10px -10px 15px rgb(1, 226, 31), 10px 10px 15px rgba(29, 235, 6, 0.12);
+    border-radius: 10px;
+    /* border: 8px solid #ececec; */
+    /* background-color: #ececec; */
+    cursor: pointer;
+    outline: none;
+    padding: 0px 15px;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s;
+    
+}
+.error input{
+    border-color: red;
+    color: red;
+    height: 50px;
+    width: 290px;
+    /* appearance: none; */
+    box-shadow: -10px -10px 15px rgb(255, 0, 0), 10px 10px 15px rgba(70, 70, 70, 0.12);
+    border-radius: 10px;
+    /* border: 8px solid #ececec; */
+    /* background-color: #ececec; */
+    cursor: pointer;
+    /* outline: none; */
+    padding: 0px 15px;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s;
+    margin-top: 20px;
+}
+
+
+
+@media only screen and(max-width:576px) {
+    body {
+        background-image: url(./images/830c141b0ebe3437c608c83d87864cac.jpg);
+    }
+}
